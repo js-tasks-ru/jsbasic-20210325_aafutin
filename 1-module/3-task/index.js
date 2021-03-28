@@ -3,7 +3,7 @@ function ucFirst(str) {
     throw new Error('str must be a string');
   }
   str = str.trim();
-  const firstLetter = str[0];
+  const firstLetter = str[0] && str[0].toUpperCase() || '';
   const remainingPart = str.slice(1);
   return firstLetter.toUpperCase() + remainingPart;
 }

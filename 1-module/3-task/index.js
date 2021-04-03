@@ -5,5 +5,5 @@ function ucFirst(str) {
   str = str.trim();
   const firstLetter = str[0] && str[0].toUpperCase() || '';
   const remainingLetters = str.slice(1);
-  return firstLetter.toUpperCase() + remainingLetters;
+  return firstLetter + remainingLetters;
 }
